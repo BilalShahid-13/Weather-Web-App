@@ -93,7 +93,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('/src/page1.jpg');
+    background-image: url('https://bilalshahid-13.github.io/Weather-Web-App/src/page1.jpg');
 }
 
 /* Responsive */
