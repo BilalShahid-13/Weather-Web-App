@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Apercu';
+    src: url('/fonts/ApercuPro-Medium.ttf');
+    /* font-weight: 500; */
+    font-style: normal;
+}
+
+#card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    border: 0px solid transparent;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    width: 30vw;
+    height: 45vh;
+    margin: 0vh 2vw;
+    /* background-color: #333; */
+}
+
+#card img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    /* background-color: red; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#card h5 {
+    font-family: 'Apercu';
+    font-size: 3vw;
+    text-align: center;
+    margin: 2vh 0vw;
+    color: #333;
+}
+
+#card p {
+    font-family: 'Apercu';
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+
+    #card {
+        width: 30vw;
+        height: auto;
+    }
+    #card h5{
+        font-size: 4vw;
+    }
+    #card p{
+        font-size: 3vw;
+    }
+}
+
+
+@media (max-width: 767px) and (min-width:480px) {
+    #card {
+        width: 27vw;
+        height: 30vh;
+        margin: 4vh 2vw;
+    }
+    #card h5{
+        font-size: 4vw;
+    }
+    #card p{
+        font-weight: 100;
+        font-size: 3vw;
+    }
+}

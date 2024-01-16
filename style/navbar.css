@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('/fonts/ApercuPro-Medium.ttf');
+    /* font-weight: 500; */
+    font-style: normal;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 1vh 0vw;
+}
+
+.left h3 {
+    font-size: 1.5vw;
+    font-family: Apercu;
+    margin: 0vh 1vw;
+}
+
+.left img {
+    width: 4vw;
+}
+
+#navbar .mid {
+    position: relative;
+    justify-content: center;
+
+}
+
+.mid-ul {
+    display: flex;
+    gap: 6vw;
+}
+
+.mid-ul li {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    list-style: none;
+    padding: 1.5vh 0vw;
+    overflow: hidden;
+}
+
+.mid-ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.6vw;
+    font-family: Apercu;
+}
+
+.mid-ul li::after {
+    display: none;
+    position: absolute;
+    content: '';
+    top: 6vh;
+    width: 1vw;
+    height: .4vh;
+    background-color: #00bfff;
+}
+
+.mid-ul>li:hover::after {
+    display: block;
+    animation: navbar_ani .5s linear;
+}
+
+@keyframes navbar_ani {
+    from {
+        /* left: 0vw; */
+        padding: 0vh 0vw;
+    }
+
+    to {
+        padding: 0vh 2vw;
+        /* left: 5vw; */
+    }
+}
+
+#active {
+    display: flex;
+    /* position: absolute; */
+    border-bottom: 2px solid #00bfff;
+    border-radius: .2vw;
+    /* transition: .2s; */
+}
+
+.right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: greenyellow; */
+}
+
+.right a {
+    text-decoration: none;
+    color: #333;
+}
+
+.right ion-icon {
+    width: 5vw;
+    height: 5vh;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #navbar .right {
+        margin-right: 4vw;
+    }
+    #navbar .mid{
+        display: none;
+    }
+    #navbar .left{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0vh 2vw;
+        width:80%;
+        /* background-color: red; */
+    }
+    #navbar .left h3{
+        /* transform: translate(-50%,-50%); */
+        text-align: center;
+        font-size: 4.5vw;
+        margin: 0vh 8vw;
+        
+    }
+    .left h3 {
+        font-size: 3vw;
+    }
+    .left img {
+        width: 6vw;
+    }
+}
+
+@media (max-width: 970px) and (min-width:769px){
+    #navbar .right {
+        margin-right: 5vw;
+    }
+}

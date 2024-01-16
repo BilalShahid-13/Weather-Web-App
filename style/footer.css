@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Apercu';
+    src: url('/fonts/ApercuPro-Medium.ttf');
+    font-style: normal;
+}
+
+.contact-us {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    bottom: 0;
+    width: 100vw;
+    height: 45vh;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.contact-us h2 {
+    width: 100vw;
+    text-align: center;
+    position: absolute;
+    font-size: 2.2vw;
+    font-family: 'Apercu';
+    top: 0;
+    margin: 2vh 0vw;
+    padding: 1vh 0vw;
+    border-bottom: 1.4px solid #00bfff;
+    color: #333;
+}
+
+footer i {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10vh;
+    top: 15vh;
+    color: #00bfff;
+    margin: 2vh 2vw;
+}
+
+footer a {
+    font-family: 'Apercu';
+    text-decoration: none;
+    color: #00bfff76;
+    padding: 0vh 1vw;
+}
+
+.sub-footer {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    bottom: 0;
+    width: 100vw;
+    z-index: 0;
+    justify-content: space-between;
+}
+
+.sub-footer h6 {
+    margin: 2vh 2vw;
+}
+
+@media (max-width: 480px) {
+
+    footer{
+        position: relative;
+    }
+    footer i {
+        top: 9vh;
+        font-family: 'Apercu';
+        text-decoration: none;
+        color: #00bfff76;
+        padding: 1vh 2.5vw;
+        font-size: 4.3vw;
+    }
+
+    .sub-footer h6 {
+        position: absolute;
+        bottom: 0vh;
+        margin-bottom: 3vh;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .contact-us h2 {
+        font-size: 6vw;
+    }
+}

@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('/fonts/ApercuPro-Medium.ttf');
+    /* font-weight: 500; */
+    font-style: normal;
+}
+
+body {
+    /* scroll-behavior: smooth; */
+}
+
+.page2 {
+    /* background-color: aqua; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #00bfff;
+    height: 89vh;
+    overflow: hidden;
+    transition: .7s ease;
+    z-index: 9;
+    /* margin: 1vh 0vw; */
+}
+
+.page2>h1:nth-child(1) {
+    display: inline;
+    left: -100%;
+}
+
+.page2>h1 {
+    display: none;
+    font-size: 6vw;
+    text-align: center;
+    font-family: 'Apercu';
+    top: 10%;
+    position: absolute;
+    color: white;
+}
+
+.page2 .search {
+    position: relative;
+}
+
+.page2 .search input {
+    position: relative;
+    width: 50vw;
+    height: 9vh;
+    border-color: transparent;
+    outline: none;
+    padding: 0vw 4vh;
+    border-radius: 10vw;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-clear-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+.page2 input::placeholder {
+    /* padding: 0vh 1vw; */
+    font-family: 'Apercu';
+}
+
+.page2 .search ion-icon {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0vh -2vw;
+}
+
+.page2 .search ion-icon:nth-child(3) {
+    /* display: none; */
+    opacity: 0;
+    transition: .6s;
+}
+
+.page2 .buttons {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 2vh 0vw;
+}
+
+.page2 .buttons button {
+    display: flex;
+    border-color: transparent;
+    outline: none;
+    padding: 2vh 2.4vw;
+    margin: 0vh 3vw;
+    margin-top: 5vh;
+    border-radius: 10vw;
+    font-size: 1.4vw;
+    color: #333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.page2 .buttons button:hover {
+    display: block;
+    animation: hover .7s ease;
+}
+
+@keyframes hover {
+    from {
+        background-color: #d1f0fa;
+        box-shadow: 1px 1px 2px rgba(196, 196, 196, 0.9);
+    }
+
+    to {
+        background-color: #00bfff;
+        box-shadow: 1px 1px 2px rgba(51, 51, 51, 0.2);
+    }
+}
+
+.page2 .buttons button:nth-child(2) {
+    background-color: rgb(255, 69, 180);
+    color: white;
+    box-shadow: 1px 1px 8px rgba(255, 69, 180, .3);
+}
+
+.page2 .buttons button:nth-child(1) {
+    box-shadow: 1px 1px 8px rgba(236, 236, 236, .5);
+}
+
+.page2 .buttons button:nth-child(2):active {
+    background-color: rgb(237, 0, 111);
+}
+
+.page2 .buttons button:nth-child(1):active {
+    background-color: whitesmoke;
+}
+
+@media (max-width: 480px) {
+
+    .page2 {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 50vh;
+        overflow: hidden;
+        transition: .7s ease;
+    }
+
+    .page2>h1 {
+        font-size: 6.5vw;
+    }
+
+    .page2 .search {
+        position: absolute;
+        display: block;
+        top: 0vh;
+        margin: 18vh 0vw;
+    }
+
+    .page2 .search input {
+        width: 80vw;
+        height: 8vh;
+    }
+
+    .page2>.search ion-icon {
+        position: absolute;
+        top: 50%;
+        margin: 0vh -8vw;
+    }
+
+    .page2>.buttons {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0vh;
+        margin: 25vh 0vw;
+    }
+
+    .page2>.buttons>button {
+        padding: 1.5vh 9vw;
+        margin: 0vh 3vw;
+        margin-top: 5vh;
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 767px) and (min-width:480px) {
+    .page2>h1 {
+        font-size: 6vw;
+    }
+
+    .page2 .search {
+        position: absolute;
+        display: block;
+        top: 0vh;
+        margin: 24vh 0vw;
+    }
+
+    .page2 .search input {
+        width: 80vw;
+        height: 8vh;
+    }
+
+    .page2>.search ion-icon {
+        position: absolute;
+        top: 50%;
+        margin: 0vh -8vw;
+    }
+
+    .page2>.buttons {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0vh;
+        margin: 33vh 0vw;
+    }
+
+    .page2>.buttons>button {
+        padding: 1.5vh 6vw;
+        margin: 0vh 3vw;
+        margin-top: 5vh;
+        font-size: 3vw;
+    }
+}
