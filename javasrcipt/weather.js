@@ -75,7 +75,7 @@ function chk_weather(obj) {
     if (obj.weather[0].main === "Mist") {
         console.log(obj.weather.main)
         video_ani()
-        video.src = "/video/mist.mp4"
+        video.src = "https://bilalshahid-13.github.io/Weather-Web-App/video/mist.mp4"
         page2.style.backgroundColor = "transparent"
         page4.style.backgroundColor = "transparent"
 
@@ -86,7 +86,7 @@ function chk_weather(obj) {
         // console.log("windy")
         console.log(obj.weather.main)
         video_ani()
-        video.src = "/video/clear sky.mp4"
+        video.src = "https://bilalshahid-13.github.io/Weather-Web-App/video/clear sky.mp4"
         page2.style.backgroundColor = "transparent"
         page4.style.backgroundColor = "transparent"
         for (let index = 0; index < cards.length; index++) {
@@ -96,7 +96,7 @@ function chk_weather(obj) {
     else if (obj.weather[0].main === "Fog") {
         // console.log("windy")
         video_ani()
-        video.src = "/video/clear sky.mp4"
+        video.src = "https://bilalshahid-13.github.io/Weather-Web-App/video/clear sky.mp4"
         page2.style.backgroundColor = "transparent"
         page4.style.backgroundColor = "transparent"
         for (let index = 0; index < cards.length; index++) {
@@ -107,7 +107,7 @@ function chk_weather(obj) {
     else if (obj.weather[0].main === "Snow") {
         // console.log("windy")
         video_ani()
-        video.src = "/video/snow.mp4"
+        video.src = "https://bilalshahid-13.github.io/Weather-Web-App/video/snow.mp4"
         page2.style.backgroundColor = "transparent"
         page4.style.backgroundColor = "transparent"
         for (let index = 0; index < cards.length; index++) {
@@ -129,7 +129,7 @@ function chk_weather(obj) {
     else if (obj.weather[0].main === "Tornado") {
         // console.log("windy")
         video_ani()
-        video.src = "/video/torndo.mp4"
+        video.src = "https://bilalshahid-13.github.io/Weather-Web-App/video/torndo.mp4"
         page2.style.backgroundColor = "transparent"
         page4.style.backgroundColor = "transparent"
         for (let index = 0; index < cards.length; index++) {
