@@ -26,7 +26,7 @@ body{
     height: 100vh;
     top: 0;
     width: 22vw;
-    right: 0vw;
+    right: -30vw;
     z-index: 100;
     float: right;
     background-color: rgb(250, 250, 250);
