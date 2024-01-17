@@ -123,6 +123,16 @@ function chk_weather(obj) {
         page4.style.backgroundColor = "transparent"
         for (let index = 0; index < cards.length; index++) {
             cards[index].style.backgroundColor = "transparent"
+        }
+    }
+    else if (obj.weather[0].main === "Clouds") {
+        // console.log("windy")
+        video_ani()
+        video.src = "https://bilalshahid-13.github.io/Weather-Web-App/video/rain.mp4"
+        page2.style.backgroundColor = "transparent"
+        page4.style.backgroundColor = "transparent"
+        for (let index = 0; index < cards.length; index++) {
+            cards[index].style.backgroundColor = "transparent"
             
         }
     }
